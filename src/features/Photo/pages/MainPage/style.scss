@@ -1,0 +1,21 @@
+button {
+  color: #fff;
+  a {
+    color: #fff;
+  }
+  a:hover {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.photo-list {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  img {
+  width: 300px;
+  height: 200px;
+}
+}

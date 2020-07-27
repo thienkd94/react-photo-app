@@ -1,0 +1,19 @@
+.banner {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  margin-bottom: 40px;
+
+  background-image: url(../../assets/images/pink-bg.jpg);
+  background-position: center;
+  background-size: cover;
+
+  &__title {
+    color: rgb(236, 149, 149);
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 2px;
+  }
+}
