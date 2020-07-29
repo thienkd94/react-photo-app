@@ -9,16 +9,16 @@ import { PHOTO_CATEGORY_OPTIONS } from "../../../../constants/global";
 import RandomPhotoField from "../../../../custom-fields/RandomPhotoField";
 
 const PhotoForm = (props) => {
-  const initialValues = {
-    title: "",
-    category: null,
-    photo: "",
-  };
+  const { initialValues, isAddMode } = props;
 
   const validationSchema = yup.object().shape({
     title: yup.string().required("Title is required."),
-    category: yup.string().nullable().required("Category is required"),
-    photo: yup.string().required("Photo is required."),
+    categoryId: yup.number().nullable().required("Category is required"),
+    photo: yup.string().when("categoryId", {
+      is: 1,
+      then: yup.string().required("Photo is required."),
+      otherwise: yup.string().notRequired(),
+    }),
   });
 
   return (
@@ -43,9 +43,10 @@ const PhotoForm = (props) => {
                       placeholder="Enter a title"
                     />
                   </Col>
+
                   <Col md={6}>
                     <FastField
-                      name="category"
+                      name="categoryId"
                       component={SelectField}
                       label="Category"
                       options={PHOTO_CATEGORY_OPTIONS}
@@ -61,8 +62,8 @@ const PhotoForm = (props) => {
                 <Row>
                   <Col className="text-center mt-5">
                     <Button type="submit" color="info">
-                        {isSubmitting && <Spinner size="sm" />} {" "}
-                      Add to album
+                      {isSubmitting && <Spinner size="sm" />}{" "}
+                      {isAddMode ? "Add to album" : "Update your photo"}
                     </Button>
                   </Col>
                 </Row>

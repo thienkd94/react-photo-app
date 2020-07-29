@@ -1,28 +1,43 @@
-import React from 'react'
-import Banner from '../../../../components/Banner/Banner'
-import { Container, Button } from 'reactstrap'
-import { Link } from 'react-router-dom'
-import "./style.scss"
-import { useSelector } from 'react-redux'
-import PhotoList from '../../components/PhotoList'
+import React from "react";
+import Banner from "../../../../components/Banner/Banner";
+import { Container, Button } from "reactstrap";
+import { Link, useHistory } from "react-router-dom";
+import "./style.scss";
+import { useSelector, useDispatch } from "react-redux";
+import PhotoList from "../../components/PhotoList";
+import { removePhoto } from "../../photoSlice";
 
 const MainPage = () => {
-  const photos = useSelector(state => state.photos);
-  console.log(photos);
+  const photos = useSelector((state) => state.photos);
+  const dispatch = useDispatch();
+  const history = useHistory();
 
-    return (
-      <div>
-        <Banner title="Your awesome photos " />
+  const handlePhotoEditClick = (id) => {
+    history.push(`/photos/${id}`);
+  };
 
-        <Container className="text-center">
-          <Link to="photos/add">
-            <Button color="success">Add new photo </Button>
-          </Link>
+  const handlePhotoRemoveClick = (id) => {
+    const action = removePhoto(id);
+    dispatch(action);
+  };
 
-          <PhotoList />
-        </Container>
-      </div>
-    );
-}
+  return (
+    <div>
+      <Banner title="Your awesome photos " />
 
-export default MainPage
+      <Container className="text-center">
+        <Link to="photos/add">
+          <Button color="success">Add new photo </Button>
+        </Link>
+
+        <PhotoList
+          photos={photos}
+          onPhotoEditClick={handlePhotoEditClick}
+          onPhotoRemoveClick={handlePhotoRemoveClick}
+        />
+      </Container>
+    </div>
+  );
+};
+
+export default MainPage;

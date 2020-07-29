@@ -11,7 +11,7 @@ const Photo = (props) => {
     <div>
       <Switch>
         <Route exact path={match.url} component={MainPage} />
-        <Route exact path={`${match.url}/:add`} component={AddEditPage} />
+        <Route exact path={`${match.url}/add`} component={AddEditPage} />
         <Route exact path={`${match.url}/:photoId`} component={AddEditPage} />
         <Route component={NotFound} />
       </Switch>
