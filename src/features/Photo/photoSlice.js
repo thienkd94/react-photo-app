@@ -22,7 +22,7 @@ const photo = createSlice({
       title: "Hello",
       categoryId: 3,
       photo:
-        "https://lh3.googleusercontent.com/proxy/uw-Dir3yK2spI9gbMxwYp0CztKPixJTUAUJ66JOdr1pmbmlKPu_MvasdRMrckosZSpl3ASNIeQUZgBnfSd5IRRyyzcruFIUHOW799pwO4co-7a_rxyFlZeoIfmrsxRc0td85EY4wxVJyitDnxb2rIz2R9QWWBuMOfblRoB5XV9a8oBLgemxGsgTclAZrsxj9",
+        "https://tinanimehot.com/wp-content/uploads/2016/12/160704_06-300x200.jpg",
     },
     {
       id: 1634,

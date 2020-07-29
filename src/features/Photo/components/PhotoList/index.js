@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import { Col, ButtonGroup, Button } from "reactstrap";
+import ModalDelete from "../ModalDelete";
 
 const PhotoList = (props) => {
   const { photos, onPhotoEditClick, onPhotoRemoveClick } = props;
@@ -24,13 +25,11 @@ const PhotoList = (props) => {
                   >
                     Edit
                   </Button>
-                  <Button
-                    outline
-                    color="danger"
-                    onClick={() => onPhotoRemoveClick(photo.id)}
-                  >
-                    Delete
-                  </Button>
+
+                  <ModalDelete
+                    id={photo.id}
+                    onPhotoRemoveClick={onPhotoRemoveClick}
+                  />
                 </ButtonGroup>
               </div>
             </Col>

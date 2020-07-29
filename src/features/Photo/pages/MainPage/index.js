@@ -7,6 +7,7 @@ import { useSelector, useDispatch } from "react-redux";
 import PhotoList from "../../components/PhotoList";
 import { removePhoto } from "../../photoSlice";
 
+
 const MainPage = () => {
   const photos = useSelector((state) => state.photos);
   const dispatch = useDispatch();
@@ -20,6 +21,7 @@ const MainPage = () => {
     const action = removePhoto(id);
     dispatch(action);
   };
+
 
   return (
     <div>

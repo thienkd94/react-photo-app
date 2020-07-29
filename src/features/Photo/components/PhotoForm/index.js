@@ -8,6 +8,12 @@ import SelectField from "../../../../custom-fields/SelectField";
 import { PHOTO_CATEGORY_OPTIONS } from "../../../../constants/global";
 import RandomPhotoField from "../../../../custom-fields/RandomPhotoField";
 
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { Link } from "react-router-dom";
+
+
+
 const PhotoForm = (props) => {
   const { initialValues, isAddMode } = props;
 
@@ -20,6 +26,21 @@ const PhotoForm = (props) => {
       otherwise: yup.string().notRequired(),
     }),
   });
+
+  toast.configure({
+    autoClose: 3000,
+    draggable: false,
+    position: toast.POSITION.TOP_RIGHT,
+  });
+
+  const notify = () =>
+    setTimeout(() => {
+      if (isAddMode) {
+        toast.success("Add photo successful !");
+      } else {
+        toast.success("Update photo successful !");
+      }
+    }, 1500);
 
   return (
     <Formik
@@ -61,7 +82,10 @@ const PhotoForm = (props) => {
                 />
                 <Row>
                   <Col className="text-center mt-5">
-                    <Button type="submit" color="info">
+                    <Link to="/photos" className="mr-3">
+                      <Button>Cancel</Button>
+                    </Link>
+                    <Button type="submit" color="info" onClick={notify}>
                       {isSubmitting && <Spinner size="sm" />}{" "}
                       {isAddMode ? "Add to album" : "Update your photo"}
                     </Button>

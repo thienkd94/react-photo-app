@@ -1,13 +1,17 @@
-.header__top {
-  a {
-    text-decoration: none;
-    font-size: 22px;
-    font-weight: 600;
-    .photo {
-      color: rgb(236, 149, 149);
-    }
-    .app {
-      color: lightseagreen;
+.header {
+  padding: 20px 0;
+  .header__top {
+    a {
+      text-decoration: none;
+      font-size: 24px;
+      font-weight: bold;
+      text-transform: uppercase;
+      .photo {
+        color: rgb(236, 149, 149);
+      }
+      .app {
+        color: lightseagreen;
+      }
     }
   }
 }
