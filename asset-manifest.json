@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/react-photo-app/static/css/main.2ca627eb.chunk.css",
+    "main.js": "/react-photo-app/static/js/main.8d348c3c.chunk.js",
+    "main.js.map": "/react-photo-app/static/js/main.8d348c3c.chunk.js.map",
+    "runtime-main.js": "/react-photo-app/static/js/runtime-main.64616d13.js",
+    "runtime-main.js.map": "/react-photo-app/static/js/runtime-main.64616d13.js.map",
+    "static/css/2.d34346ea.chunk.css": "/react-photo-app/static/css/2.d34346ea.chunk.css",
+    "static/js/2.1874f1a5.chunk.js": "/react-photo-app/static/js/2.1874f1a5.chunk.js",
+    "static/js/2.1874f1a5.chunk.js.map": "/react-photo-app/static/js/2.1874f1a5.chunk.js.map",
+    "static/css/3.af3c1da9.chunk.css": "/react-photo-app/static/css/3.af3c1da9.chunk.css",
+    "static/js/3.bd18a311.chunk.js": "/react-photo-app/static/js/3.bd18a311.chunk.js",
+    "static/js/3.bd18a311.chunk.js.map": "/react-photo-app/static/js/3.bd18a311.chunk.js.map",
+    "static/css/4.a9f5951d.chunk.css": "/react-photo-app/static/css/4.a9f5951d.chunk.css",
+    "static/js/4.64993845.chunk.js": "/react-photo-app/static/js/4.64993845.chunk.js",
+    "static/js/4.64993845.chunk.js.map": "/react-photo-app/static/js/4.64993845.chunk.js.map",
+    "index.html": "/react-photo-app/index.html",
+    "precache-manifest.e9b4e1db40a9a31deafbbaf684c2814d.js": "/react-photo-app/precache-manifest.e9b4e1db40a9a31deafbbaf684c2814d.js",
+    "service-worker.js": "/react-photo-app/service-worker.js",
+    "static/css/2.d34346ea.chunk.css.map": "/react-photo-app/static/css/2.d34346ea.chunk.css.map",
+    "static/css/3.af3c1da9.chunk.css.map": "/react-photo-app/static/css/3.af3c1da9.chunk.css.map",
+    "static/css/4.a9f5951d.chunk.css.map": "/react-photo-app/static/css/4.a9f5951d.chunk.css.map",
+    "static/css/main.2ca627eb.chunk.css.map": "/react-photo-app/static/css/main.2ca627eb.chunk.css.map",
+    "static/js/2.1874f1a5.chunk.js.LICENSE.txt": "/react-photo-app/static/js/2.1874f1a5.chunk.js.LICENSE.txt",
+    "static/js/3.bd18a311.chunk.js.LICENSE.txt": "/react-photo-app/static/js/3.bd18a311.chunk.js.LICENSE.txt",
+    "static/media/Banner.scss": "/react-photo-app/static/media/pink-bg.c8426a37.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.64616d13.js",
+    "static/css/3.af3c1da9.chunk.css",
+    "static/js/3.bd18a311.chunk.js",
+    "static/css/main.2ca627eb.chunk.css",
+    "static/js/main.8d348c3c.chunk.js"
+  ]
+}
