@@ -18,7 +18,7 @@ const AddEditPage = () => {
   const initialValues = isAddMode
     ? {
         title: "",
-        category: null,
+        categoryId: null,
         photo: "",
       }
     : editedPhoto;

@@ -5,72 +5,87 @@ const photo = createSlice({
   initialState: [
     {
       id: 1622,
-      title: "Lorem lipsum dolor sit amet Lorem lipsum dolor sit amet",
+      title: "Lotus",
       categoryId: 1,
       photo:
-        "https://i.pinimg.com/originals/c4/25/bd/c425bdccc9a93c793d1ffc8ae1ac5b51.jpg",
+        "https://dean2020.edu.vn/wp-content/uploads/2019/06/hinh-anh-hoa-sen-trang-17-300x200.jpg",
     },
     {
       id: 2622,
-      title: "Hello",
-      categoryId: 2,
+      title: "Car",
+      categoryId: 6,
       photo:
-        "https://giupban.com.vn/wp-content/uploads/2019/09/hinh-anh-mua-thu.jpg1_-300x200.jpg",
+        "https://moigioinhadat.net.vn/wp-content/uploads/2019/06/Hinh-2-1452-1560928825-300x200.png",
     },
     {
       id: 3632,
-      title: "Hello",
-      categoryId: 3,
+      title: "Dolphin",
+      categoryId: 2,
       photo:
-        "https://tinanimehot.com/wp-content/uploads/2016/12/160704_06-300x200.jpg",
+        "https://tophinhanhdep.com/wp-content/uploads/2018/01/anh-dong-vat-bien-300x200.jpg",
     },
     {
       id: 1634,
-      title: "Hello",
-      categoryId: 4,
-      photo: "https://via.placeholder.com/300x200",
+      title: "Boxing",
+      categoryId: 3,
+      photo:
+        "https://vothuattayson.vn/wp-content/uploads/size-gang-tay-boxing-1-300x200.jpg",
     },
     {
       id: 2455,
-      title: "Hello",
+      title: "Beer",
       categoryId: 5,
-      photo: "https://via.placeholder.com/300x200",
+      photo:
+        "https://bebidasalcoholicas.org/wp-content/uploads/2019/07/Best-English-Beers-300x200.jpg",
     },
     {
       id: 5126,
-      title: "Hello",
+      title: "Keyboard",
       categoryId: 6,
-      photo: "https://via.placeholder.com/300x200",
+      photo:
+        "https://www.semshred.com/wp-content/uploads/2018/11/update-keyboard-300x200.jpg",
     },
     {
-      id: 4127,
-      title: "Hello",
+      id: 1622,
+      title: "Lotus",
       categoryId: 1,
-      photo: "https://via.placeholder.com/300x200",
+      photo:
+        "https://dean2020.edu.vn/wp-content/uploads/2019/06/hinh-anh-hoa-sen-trang-17-300x200.jpg",
     },
     {
-      id: 1842,
-      title: "Hello",
-      categoryId: 3,
-      photo: "https://via.placeholder.com/300x200",
+      id: 2622,
+      title: "Car",
+      categoryId: 6,
+      photo:
+        "https://moigioinhadat.net.vn/wp-content/uploads/2019/06/Hinh-2-1452-1560928825-300x200.png",
     },
     {
-      id: 1925,
-      title: "Hello",
+      id: 3632,
+      title: "Dolphin",
       categoryId: 2,
-      photo: "https://via.placeholder.com/300x200",
+      photo:
+        "https://tophinhanhdep.com/wp-content/uploads/2018/01/anh-dong-vat-bien-300x200.jpg",
     },
     {
-      id: 1250,
-      title: "Hello",
-      categoryId: 4,
-      photo: "https://via.placeholder.com/300x200",
-    },
-    {
-      id: 1231,
-      title: "Hello",
+      id: 1622,
+      title: "Lotus",
       categoryId: 1,
-      photo: "https://via.placeholder.com/300x200",
+      photo:
+        "https://dean2020.edu.vn/wp-content/uploads/2019/06/hinh-anh-hoa-sen-trang-17-300x200.jpg",
+    },
+    {
+      id: 2622,
+      title: "Car",
+      categoryId: 6,
+      photo:
+        "https://moigioinhadat.net.vn/wp-content/uploads/2019/06/Hinh-2-1452-1560928825-300x200.png",
+    },
+    {
+      id: 3632,
+      title: "Dolphin",
+      categoryId: 2,
+      photo:
+        "https://tophinhanhdep.com/wp-content/uploads/2018/01/anh-dong-vat-bien-300x200.jpg",
     },
   ],
   reducers: {

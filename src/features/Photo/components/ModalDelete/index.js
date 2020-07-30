@@ -3,7 +3,6 @@ import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-
 const ModalDelete = (props) => {
   const [modal, setModal] = useState(false);
   const { id, onPhotoRemoveClick } = props;
@@ -18,8 +17,8 @@ const ModalDelete = (props) => {
 
   const notify = () =>
     setTimeout(() => {
-      toast.success("Photo delete successful !");
-    }, 400);
+      toast.success("Delete photo successful !");
+    }, 500);
 
   return (
     <div>

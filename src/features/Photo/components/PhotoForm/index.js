@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import * as yup from "yup";
+import * as Yup from "yup";
 import { Container, Col, Row, Button, Spinner } from "reactstrap";
 import { Formik, Form, FastField } from "formik";
 import InputField from "../../../../custom-fields/InputField";
@@ -12,18 +12,16 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Link } from "react-router-dom";
 
-
-
 const PhotoForm = (props) => {
   const { initialValues, isAddMode } = props;
 
-  const validationSchema = yup.object().shape({
-    title: yup.string().required("Title is required."),
-    categoryId: yup.number().nullable().required("Category is required"),
-    photo: yup.string().when("categoryId", {
+  const validationSchema = Yup.object().shape({
+    title: Yup.string().required("Title is required."),
+    categoryId: Yup.number().required("Category is required").nullable(),
+    photo: Yup.string().when("categoryId", {
       is: 1,
-      then: yup.string().required("Photo is required."),
-      otherwise: yup.string().notRequired(),
+      then: Yup.string().required("Photo is required."),
+      otherwise: Yup.string().notRequired(),
     }),
   });
 
@@ -33,7 +31,7 @@ const PhotoForm = (props) => {
     position: toast.POSITION.TOP_RIGHT,
   });
 
-  const notify = () =>
+  const notify = (e) =>
     setTimeout(() => {
       if (isAddMode) {
         toast.success("Add photo successful !");
