@@ -6,4 +6,5 @@ export const PHOTO_CATEGORY_OPTIONS = [
   { value: 5, label: "Styles" },
   { value: 6, label: "Vehicle" },
   { value: 7, label: "Street" },
+  { value: 8, label: "Food" },
 ];

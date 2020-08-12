@@ -10,45 +10,49 @@ button {
 }
 
 .photo-list {
+  width: 100%;
   margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
-  display: flex;
-  justify-content: center;
-  .col {
-    padding: 5px;
-    position: relative;
-    &:hover .overlay {
-      opacity: 1;
-    }
-    &:hover img {
-      opacity: 0.2;
-    }
-    .overlay {
-      transition: 0.5s ease;
-      opacity: 0;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      .text {
-        margin-bottom: 20px;
-        font-weight: 500;
+  justify-content: flex-start;
+  .photo-item {
+    width: 33%;
+    height: auto;
+    .col {
+      padding: 5px;
+      position: relative;
+      &:hover .overlay {
+        opacity: 1;
       }
-      button {
-        width: 70px;
+      &:hover img {
+        opacity: 0.2;
       }
-    }
-    img {
-      width: 300px;
-      height: 200px;
-      opacity: 1;
-      display: block;
-      width: 100%;
-      height: auto;
-      transition: 0.5s linear;
-      backface-visibility: hidden;
-      border-radius: 5px;
+      .overlay {
+        transition: 0.5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        .text {
+          margin-bottom: 20px;
+          font-weight: 500;
+        }
+        button {
+          width: 70px;
+        }
+      }
+      img {
+        width: 300px;
+        height: 200px;
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: 0.5s linear;
+        backface-visibility: hidden;
+        border-radius: 5px;
+      }
     }
   }
 }

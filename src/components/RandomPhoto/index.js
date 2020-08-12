@@ -5,7 +5,6 @@ import "./style.scss";
 
 const getRandomImageUrl = () => {
   const randomId = Math.trunc(Math.random() * 2000);
-  // return `https://picsum.photos/600/400/?random&rnd${new Date().getTime()}`;
   return `https://picsum.photos/id/${randomId}/300/200`;
 };
 

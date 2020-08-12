@@ -5,7 +5,7 @@ import ModalDelete from "../ModalDelete";
 
 const PhotoList = (props) => {
   const [numberOfPhoto, setNumberOfPhoto] = useState(6);
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(false);
 
   const { photos, onPhotoEditClick, onPhotoRemoveClick } = props;
 
@@ -53,8 +53,8 @@ const PhotoList = (props) => {
         ""
       ) : (
         <Button className="mt-4" onClick={loadMorePhoto}>
-         {loading && <Spinner size="sm" />} {" "}
-         {loading ? "Loading..." : "Load more"}
+          {loading && <Spinner size="sm" />}{" "}
+          {loading ? "Loading..." : "Load more"}
         </Button>
       )}
     </>
