@@ -70,10 +70,10 @@ const photo = createSlice({
     },
     {
       id: 3972,
-      title: "Nature",
+      title: "Pear",
       categoryId: 3,
       photo:
-        "https://lh3.googleusercontent.com/proxy/yborGgj-3wWisv3DSMGxRgUVsyu7u-hn_51mZWXd4R6onk6_P7szLWaPyj5eb6OADzgTTiwm9xWKCaAjCl4g8afX0ut0eING3mXDtDUg0piyFtA3bQtthHYcbZuzvbuKXASu0GxCx9HI7YmZuivWCz4JvC5fT-MbFPrz7ZlRpruhVDP9n6wEMM8MprJ98Ey8XZI",
+        "https://p12cdn4static.sharpschool.com/UserFiles/Servers/Server_627881/Image/JeffcoPS/Restart/images/book.jpg",
     },
     {
       id: 2222,

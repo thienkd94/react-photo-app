@@ -1,7 +1,10 @@
 .header {
   padding: 20px 0;
   .header__top {
-    a {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    .logo {
       text-decoration: none;
       font-size: 24px;
       font-weight: bold;
@@ -11,6 +14,18 @@
       }
       .app {
         color: lightseagreen;
+      }
+    }
+    .login {
+      padding: 7px 20px;
+      transition: linear 0.4s;
+      border-radius: 15px;
+      border: 1px solid rgb(236, 149, 149);
+      color: rgb(236, 149, 149);
+      &:hover {
+        text-decoration: none;
+         background-color: rgb(236, 149, 149);
+         color: #FFF;
       }
     }
   }

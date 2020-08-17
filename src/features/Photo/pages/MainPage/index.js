@@ -1,11 +1,11 @@
 import React from "react";
-import Banner from "../../../../components/Banner/Banner";
-import { Container, Button } from "reactstrap";
+import { useDispatch, useSelector } from "react-redux";
 import { Link, useHistory } from "react-router-dom";
-import "./style.scss";
-import { useSelector, useDispatch } from "react-redux";
+import { Button, Container } from "reactstrap";
+import Banner from "../../../../components/Banner/Banner";
 import PhotoList from "../../components/PhotoList";
 import { removePhoto } from "../../photoSlice";
+import "./style.scss";
 
 
 const MainPage = () => {
